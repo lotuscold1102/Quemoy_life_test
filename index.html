@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>金生金世 - 金門歷史角色扮演遊戲</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts 導入 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+        }
+        .serif-font {
+            font-family: 'Noto Serif TC', serif;
+        }
+        .bg-transition {
+            transition: background-image 0.6s ease-in-out;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-top-3{top:-0.75rem}.left-5{left:1.25rem}.right-0{right:0px}.top-0{top:0px}.bottom-28{bottom:7rem}.left-1\/2{left:50%}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mt-1\.5{margin-top:0.375rem}.mt-2{margin-top:0.5rem}.mt-2\.5{margin-top:0.625rem}.mb-3{margin-bottom:0.75rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-\[100dvh\]{height:100dvh}.h-full{height:100%}.max-h-\[160px\]{max-height:160px}.max-h-\[180px\]{max-height:180px}.max-h-\[200px\]{max-height:200px}.min-h-\[44px\]{min-height:44px}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-full{width:100%}.w-screen{width:100vw}.max-w-2xl{max-width:42rem}.max-w-sm{max-width:24rem}.max-w-\[80\%\]{max-width:80%}.shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.translate-x-full{--tw-translate-x:100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.select-none{-webkit-user-select:none;user-select:none}.resize-none{resize:none}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2\.5{gap:0.625rem}.gap-2{gap:0.5rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.375rem * var(--tw-space-x-reverse));margin-left:calc(0.375rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-amber-500\/20{border-color:rgb(245 158 11 / 0.2)}.border-amber-500\/40{border-color:rgb(245 158 11 / 0.4)}.border-amber-500\/50{border-color:rgb(245 158 11 / 0.5)}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-amber-500\/45{border-color:rgb(245 158 11 / 0.45)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-amber-600\/20{background-color:rgb(217 119 6 / 0.2)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-black\/75{background-color:rgb(0 0 0 / 0.75)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-950{--tw-bg-opacity:1;background-color:rgb(3 7 18 / var(--tw-bg-opacity, 1))}.bg-black\/85{background-color:rgb(0 0 0 / 0.85)}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-700{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-gray-800\/85{background-color:rgb(31 41 55 / 0.85)}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-black\/95{--tw-gradient-from:rgb(0 0 0 / 0.95) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-black\/45{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(0 0 0 / 0.45) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-black\/70{--tw-gradient-to:rgb(0 0 0 / 0.7) var(--tw-gradient-to-position)}.bg-cover{background-size:cover}.bg-center{background-position:center}.bg-no-repeat{background-repeat:no-repeat}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-2\.5{padding:0.625rem}.p-1{padding:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pb-6{padding-bottom:1.5rem}.pr-1{padding-right:0.25rem}.pt-1{padding-top:0.25rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-base{font-size:1rem;line-height:1.5rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:0.05em}.text-amber-100{--tw-text-opacity:1;color:rgb(254 243 199 / var(--tw-text-opacity, 1))}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_rgba\(147\2c 51\2c 234\2c 0\.5\)\]{--tw-shadow:0 0 10px rgba(147,51,234,0.5);--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-lg{--tw-backdrop-blur:blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:border-amber-500:hover{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.hover\:bg-amber-600:hover{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-600\/30:hover{background-color:rgb(217 119 6 / 0.3)}.hover\:bg-amber-700:hover{--tw-bg-opacity:1;background-color:rgb(180 83 9 / var(--tw-bg-opacity, 1))}.hover\:bg-red-900\/60:hover{background-color:rgb(127 29 29 / 0.6)}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.hover\:bg-green-800:hover{--tw-bg-opacity:1;background-color:rgb(22 101 52 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-700:hover{--tw-bg-opacity:1;background-color:rgb(126 34 206 / var(--tw-bg-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-red-300:hover{--tw-text-opacity:1;color:rgb(252 165 165 / var(--tw-text-opacity, 1))}.focus\:border-amber-500:focus{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:scale-\[0\.98\]:active{--tw-scale-x:0.98;--tw-scale-y:0.98;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:w-\[440px\]{width:440px}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:text-xs{font-size:0.75rem;line-height:1rem}}@media (min-width: 768px){.md\:p-6{padding:1.5rem}.md\:text-base{font-size:1rem;line-height:1.5rem}}</style></head>
+<body class="bg-gray-955 text-gray-100 overflow-hidden h-[100dvh] w-screen flex flex-col justify-between relative select-none">
+
+    <!-- 滿版背景圖片 -->
+    <div id="game-bg" class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-transition z-0" style="background-image: url(&quot;https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&amp;fit=crop&amp;q=80&amp;w=800&quot;);">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/70"></div>
+    </div>
+
+    <!-- 頂部資訊欄 -->
+    <header class="relative z-10 p-4 flex justify-between items-center w-full">
+        <div class="flex items-center space-x-2">
+            <span class="bg-amber-600 text-[10px] text-white px-1.5 py-0.5 rounded font-bold tracking-wider">RPG</span>
+            <h1 class="text-lg font-bold tracking-wider serif-font text-amber-100 drop-shadow">金生金世</h1>
+        </div>
+        
+        <div class="flex items-center space-x-1.5">
+            <!-- 編輯模式切換按鈕 -->
+            
+
+            <!-- 回到起點按鈕 -->
+            <button onclick="restartGame()" class="bg-black/40 hover:bg-red-900/60 border border-white/10 text-gray-300 p-2 rounded-lg text-xs transition backdrop-blur-md" title="回到起點">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 15H19"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- 中間大圖留白區 -->
+    <div class="flex-grow relative z-10 flex flex-col justify-end items-center pointer-events-none"></div>
+
+    <!-- 底部控制區 -->
+    <main class="relative z-10 w-full max-w-2xl mx-auto px-4 pb-6 flex flex-col space-y-4">
+        
+        <!-- 故事對話卡片 -->
+        <section class="bg-black/75 border border-white/10 rounded-2xl p-5 md:p-6 backdrop-blur-lg shadow-2xl relative">
+            <!-- 聚落標記 -->
+            <div class="absolute -top-3 left-5 bg-amber-500 text-black text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow" id="node-tag">前言 ──《金生金世》</div>
+
+            <!-- 故事文字主體 -->
+            <div class="text-sm md:text-base leading-relaxed text-gray-100 serif-font mt-1.5 max-h-[160px] overflow-y-auto pr-1" id="story-text">如果你是金門人，你會生在哪個聚落？你在何時出生？經歷什麼歷史事件？你將面臨怎樣的抉擇？你的命運又將會如何？<br><br>金生金世，故事由此揭幕...</div>
+        </section>
+
+        <!-- 選項按鈕區（支援兩三個一排，字少少） -->
+        <section id="choices-container" class="grid grid-cols-1 w-full pb-2"><button class="w-full bg-black/75 hover:bg-amber-600 border border-amber-500/20 hover:border-amber-500 text-gray-200 hover:text-white font-medium py-3 px-2 rounded-xl transition text-[11px] sm:text-xs backdrop-blur-md shadow-md text-center flex justify-center items-center active:scale-[0.98] min-h-[44px]"><span class="truncate">開啟旅程</span></button></section>
+    </main>
+
+    <!-- ================= 側邊編輯器抽屜 ================= -->
+    
+
+    <!-- ================= 全局客製化對話視窗 (完全取代 prompt / alert) ================= -->
+    <div id="custom-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 hidden">
+        <div class="bg-gray-900 border border-amber-500/30 rounded-2xl max-w-sm w-full p-5 shadow-2xl relative">
+            <h3 id="modal-title" class="text-base font-bold text-amber-400 serif-font mb-1">提示</h3>
+            <div id="modal-body" class="text-xs text-gray-300 mb-4 whitespace-pre-wrap max-h-[200px] overflow-y-auto bg-black/40 p-2.5 rounded border border-gray-800">
+                內容
+            </div>
+            <div id="modal-actions" class="flex justify-end space-x-2">
+                <!-- 按鈕會動態建立 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 專屬：新增關卡對話視窗 (Modal) ================= -->
+    
+
+    <!-- ================= 遊戲核心邏輯 ================= -->
+    <script>
+        const presetBgs = {
+            kinmen_old: "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+            kinmen_洋樓: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=800",
+            kinmen_sea: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+            kinmen_military: "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800"
+        };
+
+        // 初始劇本資料庫
+        let gameData = {
+    "intro": {
+        "tag": "前言 ──《金生金世》",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "如果你是金門人，你會生在哪個聚落？你在何時出生？經歷什麼歷史事件？你將面臨怎樣的抉擇？你的命運又將會如何？\n\n金生金世，故事由此揭幕...",
+        "choices": [
+            {
+                "text": "開啟旅程",
+                "targetId": "start"
+            }
+        ]
+    },
+    "start": {
+        "tag": "命運起點 ── 選擇出生聚落",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "風沙吹拂，時代的大門在你的面前緩緩敞開。\n\n你的生命，即將在金門的哪一個聚落中悄然誕生？",
+        "choices": [
+            {
+                "text": "金湖 (陳景蘭)",
+                "targetId": "jinhu_start"
+            },
+            {
+                "text": "蔡厝 (蔡復一)",
+                "targetId": "caicuo_start"
+            },
+            {
+                "text": "水頭 (建洋樓)",
+                "targetId": "shuitou_start"
+            },
+            {
+                "text": "後浦 (求科舉)",
+                "targetId": "houpu_start"
+            },
+            {
+                "text": "東林 (種芋頭)",
+                "targetId": "donglin_start"
+            },
+            {
+                "text": "北山 (躲砲彈)",
+                "targetId": "beishan_start"
+            }
+        ]
+    },
+    "jinhu_start": {
+        "tag": "金湖聚落 ─ 誕生",
+        "bgImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=800",
+        "story": "【第1頁 / 共3頁 ─ 誕生】\n\n你誕生在金湖鎮。金湖依山傍海，擁有著名的貿易港灣──料羅灣，以及全島最雄偉華麗的「陳景蘭洋樓」。\n\n自幼看著波濤起伏的海浪，你感受到這片海島的貧瘠，但也學會了海民堅韌不拔的精神。隨著身體逐漸結實，你迎來了你的青年時期...",
+        "choices": [
+            {
+                "text": "繼續冒險...",
+                "targetId": "jinhu_intro_2"
+            }
+        ]
+    },
+    "jinhu_intro_2": {
+        "tag": "金湖聚落 ─ 青年狀態",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "【第2頁 / 共3頁 ─ 青年奮鬥】\n\n到了二十歲，這片土地正經歷著巨大的變革。此時，家鄉面臨著兩大出路：許多人選擇下南洋拼搏，將僑匯寄回金門建設；也有人選擇在最前線的料羅灣碼頭做起轉口貿易，甚至自組民防隊對抗海上騷亂。\n\n看著身邊的同鄉紛紛做出決定，你也即將迎來你的人生大抉擇：",
+        "choices": [
+            {
+                "text": "做出抉擇！",
+                "targetId": "jinhu_choices"
+            }
+        ]
+    },
+    "jinhu_choices": {
+        "tag": "金湖聚落 ─ 命運抉擇",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "【第3頁 / 共3頁 ─ 命運分叉】\n\n現在，輪到你決定你的人生路徑了。你要踏上前往新加坡的舢舨船，還是留在料羅灣守護家園的命脈？",
+        "choices": [
+            {
+                "text": "出洋拼搏",
+                "targetId": "jinhu_chenjinglan_path"
+            },
+            {
+                "text": "留守料羅",
+                "targetId": "jinhu_liaolo_path"
+            }
+        ]
+    },
+    "jinhu_chenjinglan_path": {
+        "tag": "出洋奮鬥",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你前往新加坡辛勤打拼，憑藉誠信和機敏，終於在南洋商界站穩腳跟、累積財富。回到故鄉金湖，你想實現當年立下的宏大願望：",
+        "choices": [
+            {
+                "text": "興建白色大洋樓",
+                "targetId": "jinhu_build_school"
+            },
+            {
+                "text": "返鄉修復宗祠",
+                "targetId": "jinhu_temple_repair"
+            }
+        ]
+    },
+    "jinhu_liaolo_path": {
+        "tag": "料羅風雲",
+        "bgImage": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800",
+        "story": "你留在料羅灣。隨後1950年代戰地政務來臨，料羅灣成了最危險也最關鍵的運補命脈。你被徵召加入民防自衛隊，在漫天砲火下搶灘運補物資：",
+        "choices": [
+            {
+                "text": "冒砲火運物資",
+                "targetId": "jinhu_army_hero"
+            },
+            {
+                "text": "山外街開商鋪",
+                "targetId": "jinhu_shanwai_biz"
+            }
+        ]
+    },
+    "jinhu_build_school": {
+        "tag": "洋樓學堂",
+        "bgImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=800",
+        "story": "大洋樓落成，白色的拱門和希臘柱廊美輪美奐，這就是金門著名的「陳景蘭洋樓」。你在洋樓裡辦學，聽著孩子們郎朗的讀書聲，你知道這棟建築將成為金門海洋教育的火車頭，流芳百世。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "jinhu_temple_repair": {
+        "tag": "宗族守護",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你用一生的積蓄振興家族、修建宗廟。雖然沒有留下宏偉的洋樓，但每當金湖宗親們歡聚一堂，大家都會在大廳的功德牌匾前，恭敬地向你的牌位獻上香火。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "jinhu_army_hero": {
+        "tag": "料羅英豪",
+        "bgImage": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800",
+        "story": "你冒險在沙灘上扛起一箱箱的物資，雖然身旁砲彈呼嘯，但你的英勇保全了無數戰士。戰後，你榮獲了國防部的英雄勳章，黃金沙灘上永遠留下了你為和平拼搏的傳奇腳印。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "jinhu_shanwai_biz": {
+        "tag": "山外繁華",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "隨著大軍進駐金門，你在山外老街開了「金湖百貨行」，販售軍用品與貢糖、高粱酒。店裡每天擠滿了阿兵哥，你也見證了那段金門最獨特、軍民共生共榮的戰地黃金商業時代！",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "caicuo_start": {
+        "tag": "蔡厝聚落 ─ 聽史",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "【第1頁 / 共2頁 ─ 先祖遺風】\n\n你出生在太武山麓的蔡厝。小時候，你常在村裡的蔡氏家廟玩耍，長輩們總會拉著你的手，指著牆上神秘的古畫像，告訴你這是明代「蔡復一」先祖的真跡。\n\n雖然他身體殘疾、一目失明，卻堅毅不拔，讀書著書，最後當上了江南巡撫、御史。先祖的精神像火種一樣點燃了你：",
+        "choices": [
+            {
+                "text": "繼承意志...",
+                "targetId": "caicuo_intro_2"
+            }
+        ]
+    },
+    "caicuo_intro_2": {
+        "tag": "蔡厝聚落 ─ 抉擇",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "【第2頁 / 共2頁 ─ 時代青年】\n\n歲月流逝，你長大成人。此時蔡厝的文史保存面臨了瓶頸，家廟需要新一代的守護者；而太武山上的百年「蔡厝古道」也正等待著文史調查。\n\n你決定走哪一條路來發揚蔡厝的海洋文史精髓？",
+        "choices": [
+            {
+                "text": "守護家廟畫像",
+                "targetId": "caicuo_portrait"
+            },
+            {
+                "text": "調查蔡厝古道",
+                "targetId": "caicuo_trail"
+            }
+        ]
+    },
+    "caicuo_portrait": {
+        "tag": "蔡復一畫像",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你走入家廟，凝視著這幅珍貴的明代畫像（國家重要古物）。畫像中的蔡復一神情剛毅。看著牆上的匾額，你深感震撼。這時，一位老宗長向你走來，詢問你是否願意接下維護家族史料、推廣金門文史的責任？",
+        "choices": [
+            {
+                "text": "留鄉推廣文史",
+                "targetId": "caicuo_save_culture"
+            },
+            {
+                "text": "外地發展商貿",
+                "targetId": "caicuo_merchant"
+            }
+        ]
+    },
+    "caicuo_trail": {
+        "tag": "蔡厝古道",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你沿著由石板鋪成的百餘年蔡厝古道拾級而上。一路上，山風徐徐，松濤拂耳。你發現了許多明清留下來的摩崖石刻。這時，你在路旁發現了一處隱蔽的碑石，上面覆蓋著青苔...",
+        "choices": [
+            {
+                "text": "清理碑文歷史",
+                "targetId": "caicuo_stone_study"
+            },
+            {
+                "text": "登太武山頂",
+                "targetId": "caicuo_mountain_top"
+            }
+        ]
+    },
+    "caicuo_save_culture": {
+        "tag": "歷史守護者",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你留在蔡厝，成為了優秀的文化導覽員。你結合AI科技將先祖的故事、蔡復一畫像的歷史，介紹給成千上萬的各國旅客。看著大家因為你而愛上金門文化，你心中充滿無比自豪！",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "caicuo_merchant": {
+        "tag": "商海奮鬥",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你前往外地發展，在繁華的碼頭累積了第一桶金。但不管你走得多遠，每逢清明，你依然會回到太武山下的蔡厝老家，跪在先祖畫像前，感念「堅毅不拔」的蔡家家風。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "caicuo_stone_study": {
+        "tag": "古物發現者",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你拂去青苔，驚喜地發現這是一塊失傳已久的明代鹽業碑文！你立刻聯絡了金門文化局。你的發現轟動了考古界，這塊石碑成功被列為保護古物，你成為了家鄉的驕傲！",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "caicuo_mountain_top": {
+        "tag": "大好河山",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你登上太武山頂，俯瞰著金門島的聚落，遠眺廈門。海天一色，壯麗非凡。你的心胸頓時無比開闊，深信自己無論去往何方，這片海島的堅韌精神將永遠伴你同行。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "shuitou_start": {
+        "tag": "水頭聚落",
+        "bgImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=800",
+        "story": "你出生在水頭。這裡出洋經商的風氣興盛，僑匯豐厚，洋樓林立。然而，沿海海盜猖獗，危機四伏。隨著年歲漸長，你站在了命運的十字路口：",
+        "choices": [
+            {
+                "text": "下南洋經商",
+                "targetId": "shuitou_abroad"
+            },
+            {
+                "text": "防海盜洋樓",
+                "targetId": "shuitou_defend"
+            }
+        ]
+    },
+    "shuitou_abroad": {
+        "tag": "出洋之路",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你搭上舢舨船，忍受著烈日與疾病，九死一生抵達南洋。經過多年的艱苦拼搏，你終於在異鄉經商有成，賺取了萬貫家財。這時你心中牽掛著金門故土：",
+        "choices": [
+            {
+                "text": "衣錦還鄉興學",
+                "targetId": "shuitou_return_school"
+            },
+            {
+                "text": "落戶南洋發展",
+                "targetId": "shuitou_stay_abroad"
+            }
+        ]
+    },
+    "shuitou_defend": {
+        "tag": "防禦防禦！",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你選擇留在水頭，與長輩共同籌資興建擁有碉堡防禦功能的「得月樓」。在一個狂風暴雨的夜裡，大批海盜乘著小船悄悄登陸，企圖洗劫村莊。刺耳的警報拉響，你拿著自衛獵槍登上防禦塔...",
+        "choices": [
+            {
+                "text": "誓死抵抗保家",
+                "targetId": "shuitou_hero"
+            },
+            {
+                "text": "受傷並存活下",
+                "targetId": "shuitou_survive"
+            }
+        ]
+    },
+    "shuitou_return_school": {
+        "tag": "功成名就",
+        "bgImage": "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&q=80&w=800",
+        "story": "你衣錦還鄉，興建了高聳華麗的洋樓，並出資興辦學校，讓村裡的孩子免費讀書。你成為了著名的「金僑」，名字永遠雋刻在校舍的石碑上。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "shuitou_stay_abroad": {
+        "tag": "落地生根",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你決定留在南洋。歲月如梭，你融入了當地的社會，子孫滿堂。雖然你再也沒有回到故土，但你依然會在每年中秋，向著故鄉的方向舉杯致敬。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "shuitou_hero": {
+        "tag": "英雄無畏",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "因為你的英勇與得月樓的鋼筋水泥防禦，海盜鎩羽而歸。你成為了守護水頭的傳奇英雄，世世代代都述說著你當年在槍樓上智鬥強盜的故事。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "shuitou_survive": {
+        "tag": "歲月靜好",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "海盜退去了，村落保住了，雖然你留下了一道永遠的傷疤，但看著村民安居樂業，你感到無比的踏實。這是用熱血與勇氣換來的平靜歲月。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "houpu_start": {
+        "tag": "後浦老街",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你誕生在後浦，這裡自古是金門的政經重心。老街上店鋪林立，文風極盛. 家族對你寄予厚望，希望你光宗耀祖。你想採取什麼方式？",
+        "choices": [
+            {
+                "text": "苦讀科舉功名",
+                "targetId": "houpu_exam"
+            },
+            {
+                "text": "行商致富捐官",
+                "targetId": "houpu_merchant"
+            }
+        ]
+    },
+    "houpu_exam": {
+        "tag": "科舉試煉",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你日夜苦讀，從縣試一路考到鄉試。這一年，你跨海前往福州參加秋闈，考場內燭火通明。你提筆寫下關於海防與民生的策論...",
+        "choices": [
+            {
+                "text": "成功考中進士",
+                "targetId": "houpu_success"
+            },
+            {
+                "text": "落榜返鄉教學",
+                "targetId": "houpu_teacher"
+            }
+        ]
+    },
+    "houpu_merchant": {
+        "tag": "儒商之道",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你在後浦碼頭經商，與廈門互通有無，積累了鉅額財富。為了提升家族地位，你決定花費重金捐得一個官銜，並獲得了「進士」或「同知」的匾額：",
+        "choices": [
+            {
+                "text": "樹立功德牌坊",
+                "targetId": "houpu_monument"
+            }
+        ]
+    },
+    "houpu_success": {
+        "tag": "光宗耀祖",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你成功高中，皇帝特賞在後浦興建一座高大精美的石牌坊（邱良功母節孝坊）。牌坊上雕樑畫棟、威風八面。你的家族自此成為名門望族，名字傳頌千古。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "houpu_teacher": {
+        "tag": "默默耕耘",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "雖然沒能當上大官，但你回到後浦創辦了私塾，將畢生所學難保留地傳授給下一代。許多年後，你的學生中有人考中了進士，他們恭敬地稱呼你為「啟蒙恩師」。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "houpu_monument": {
+        "tag": "富甲一方",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "牌匾高高掛起，家族門庭若市。你雖未走仕途，卻用財富與善行改變了家鄉。你在後浦鋪路造橋、施藥濟貧，成為了人人口中的「善人公」。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "donglin_start": {
+        "tag": "烈嶼東林",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你誕生在烈嶼（小金門）的東林聚落。這裡土地極為貧瘠、東北季風狂嘯。面對艱難的生存挑戰，你決定：",
+        "choices": [
+            {
+                "text": "改良紅土種芋",
+                "targetId": "donglin_taro"
+            },
+            {
+                "text": "出洋南洋闖蕩",
+                "targetId": "donglin_migrate"
+            }
+        ]
+    },
+    "donglin_taro": {
+        "tag": "芋頭傳奇",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你沒日沒夜地在紅土田裡耕作，終於培育出質地綿密、入口即化的「烈嶼芋頭」。名聲傳開後，商旅爭相搶購。你以此建立了自己的基業：",
+        "choices": [
+            {
+                "text": "建立特產品牌",
+                "targetId": "donglin_rich"
+            }
+        ]
+    },
+    "donglin_migrate": {
+        "tag": "連鎖移民",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "藉由親緣的「連鎖移民」，你順利抵達汶萊，在同鄉開設的商號當學徒。你為人誠信、做事勤快，最後甚至接管了商號：",
+        "choices": [
+            {
+                "text": "修祠堂興學校",
+                "targetId": "donglin_temple"
+            }
+        ]
+    },
+    "donglin_rich": {
+        "tag": "香飄百里",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "「吃東林芋，無缺錢路。」你憑藉芋頭成就了一生。你興辦合作社，讓烈嶼的農民人人有飯吃，成為小金門人人敬重的農業領袖。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "donglin_temple": {
+        "tag": "回饋桑梓",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你的僑匯回到了東林，修建了富麗堂皇的宗祠，凝聚了宗族的情感。你身在異鄉，但老家宗祠裡立起的石碑，將永遠記載著你的功德。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "beishan_start": {
+        "tag": "北山聚落",
+        "bgImage": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800",
+        "story": "你出生在古寧頭北山聚落。1949年戰爭爆發，槍林彈雨撕裂了夜空，砲彈如雨般落在屋頂。你必須立刻採取行動：",
+        "choices": [
+            {
+                "text": "躲入防空洞中",
+                "targetId": "beishan_shelter"
+            },
+            {
+                "text": "搶修祖厝牌位",
+                "targetId": "beishan_repair"
+            }
+        ]
+    },
+    "beishan_shelter": {
+        "tag": "防空洞歲月",
+        "bgImage": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&q=80&w=800",
+        "story": "在狹窄黑暗的防空洞中，外面是震耳欲聾的砲擊聲。你緊緊抱著家人，度過了無數驚心動魄的日夜。終於，硝煙漸漸散去...",
+        "choices": [
+            {
+                "text": "重建並迎來和平",
+                "targetId": "beishan_peace"
+            }
+        ]
+    },
+    "beishan_repair": {
+        "tag": "廢墟重組",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "你冒著生命危險爬上屋頂搶修。雖然受了輕傷，但你成功將祖宗牌位安置在安全的地方。這棟彈痕累累的洋樓，記錄著那段驚心動魄的歷史：",
+        "choices": [
+            {
+                "text": "保留洋樓為遺址",
+                "targetId": "beishan_history"
+            }
+        ]
+    },
+    "beishan_peace": {
+        "tag": "和平曙光",
+        "bgImage": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800",
+        "story": "你存活了下來，並用砲彈鋼片打造出了金門最著名的「鋼刀」。你親眼見證了戰地政務的解除與和平的到來。你對著大海祈願，此生此世，金門不再有戰火。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    },
+    "beishan_history": {
+        "tag": "歷史見證",
+        "bgImage": "https://images.unsplash.com/photo-1599839610166-1e550e1093f0?auto=format&fit=crop&q=80&w=800",
+        "story": "北山洋樓牆面上密密麻麻的彈孔，成為了活生生的歷史教科書。你成為了洋樓的守護人與義務解說員，無數的旅客聽著你的故事，流下了震撼與感動的眼淚。",
+        "choices": [
+            {
+                "text": "重寫傳奇",
+                "targetId": "intro"
+            }
+        ]
+    }
+};
+        let currentNodeId = "intro";
+        let isEditMode = false;
+
+        window.onload = function() {
+            // 安全讀取本地儲存
+            try {
+                const savedData = localStorage.getItem('kinmen_rpg_custom_data_v2');
+                if (savedData) {
+                    gameData = JSON.parse(savedData);
+                }
+            } catch(e) {
+                console.warn("無法存取 LocalStorage，系統將採用記憶體暫存模式！");
+            }
+            renderNode(currentNodeId);
+            setupEventListeners();
+        };
+
+        // 渲染畫面
+        function renderNode(nodeId) {
+            currentNodeId = nodeId;
+            const node = gameData[nodeId];
+
+            if (!node) {
+                showModal("提示", `找不到關卡代碼: 【${nodeId}】。您可以建立這個新頁面來豐富故事喔！`, [
+                    { text: "返回起點", onClick: () => { restartGame(); hideModal(); }, isPrimary: true }
+                ]);
+                return;
+            }
+
+            const bgElement = document.getElementById('game-bg');
+            const bgUrl = node.bgImage || presetBgs.kinmen_old;
+            bgElement.style.backgroundImage = `url('${bgUrl}')`;
+
+            document.getElementById('node-tag').innerText = node.tag || "金門";
+            document.getElementById('story-text').innerHTML = node.story.replace(/\n/g, '<br>');
+
+            const choicesContainer = document.getElementById('choices-container');
+            choicesContainer.innerHTML = '';
+
+            // 動態調整排版：根據按鈕數決定兩三個一排
+            const numChoices = node.choices ? node.choices.length : 0;
+            if (numChoices === 0) {
+                choicesContainer.className = "grid grid-cols-1 w-full pb-2";
+            } else if (numChoices === 1) {
+                choicesContainer.className = "grid grid-cols-1 w-full pb-2";
+            } else if (numChoices === 2) {
+                choicesContainer.className = "grid grid-cols-2 gap-2.5 w-full pb-2";
+            } else if (numChoices === 3) {
+                choicesContainer.className = "grid grid-cols-3 gap-2.5 w-full pb-2";
+            } else {
+                // 超過 3 個按鈕，自動在手機上雙排，寬屏上三排
+                choicesContainer.className = "grid grid-cols-2 sm:grid-cols-3 gap-2.5 w-full pb-2";
+            }
+
+            if (numChoices > 0) {
+                node.choices.forEach(choice => {
+                    const btn = document.createElement('button');
+                    // 精緻置中短按鈕樣式
+                    btn.className = "w-full bg-black/75 hover:bg-amber-600 border border-amber-500/20 hover:border-amber-500 text-gray-200 hover:text-white font-medium py-3 px-2 rounded-xl transition text-[11px] sm:text-xs backdrop-blur-md shadow-md text-center flex justify-center items-center active:scale-[0.98] min-h-[44px]";
+                    btn.innerHTML = `<span class="truncate">${choice.text}</span>`;
+                    btn.onclick = () => {
+                        renderNode(choice.targetId);
+                    };
+                    choicesContainer.appendChild(btn);
+                });
+            } else {
+                const btn = document.createElement('button');
+                btn.className = "w-full bg-red-900/60 hover:bg-red-800 border border-red-500/30 text-white font-medium py-3 px-4 rounded-xl transition text-xs sm:text-sm backdrop-blur-md text-center active:scale-[0.98]";
+                btn.innerText = "✦ 重回故事起點";
+                btn.onclick = restartGame;
+                choicesContainer.appendChild(btn);
+            }
+
+            if (isEditMode) {
+                loadNodeToEditor(nodeId);
+            }
+        }
+
+        function restartGame() {
+            renderNode("intro");
+        }
+
+        function setupEventListeners() {
+            const btnToggleEdit = document.getElementById('btn-toggle-edit');
+            const btnCloseEditor = document.getElementById('btn-close-editor');
+            const drawer = document.getElementById('editor-drawer');
+
+            btnToggleEdit.onclick = () => {
+                isEditMode = !isEditMode;
+                if (isEditMode) {
+                    drawer.classList.remove('translate-x-full');
+                    drawer.classList.remove('hidden');
+                    loadNodeToEditor(currentNodeId);
+                    document.getElementById('edit-btn-text').innerText = "📖 關閉編輯器";
+                } else {
+                    drawer.classList.add('translate-x-full');
+                    setTimeout(() => drawer.classList.add('hidden'), 300);
+                    document.getElementById('edit-btn-text').innerText = "⚙️ 進入編輯器";
+                }
+            };
+
+            btnCloseEditor.onclick = () => {
+                isEditMode = false;
+                drawer.classList.add('translate-x-full');
+                setTimeout(() => drawer.classList.add('hidden'), 300);
+                document.getElementById('edit-btn-text').innerText = "⚙️ 進入編輯器";
+            };
+        }
+
+        // ================= 編輯器管理 =================
+
+        function loadNodeToEditor(nodeId) {
+            const node = gameData[nodeId];
+            if (!node) return;
+
+            document.getElementById('edit-node-id').value = nodeId;
+            document.getElementById('edit-node-tag').value = node.tag || "";
+            document.getElementById('edit-node-bg').value = node.bgImage || "";
+            document.getElementById('edit-node-story').value = node.story || "";
+
+            const choicesList = document.getElementById('edit-choices-list');
+            choicesList.innerHTML = '';
+
+            if (node.choices) {
+                node.choices.forEach((choice, index) => {
+                    choicesList.appendChild(createChoiceRowHTML(choice.text, choice.targetId, index));
+                });
+            }
+        }
+
+        function uploadLocalImage(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            if (file.size > 2.5 * 1024 * 1024) {
+                showModal("提示", "此圖片偏大，轉成代碼後可能讓備份檔案變肥，但仍可正常使用！", [
+                    { text: "我知道了", onClick: () => hideModal() }
+                ]);
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const base64Data = e.target.result;
+                document.getElementById('edit-node-bg').value = base64Data;
+                const bgElement = document.getElementById('game-bg');
+                bgElement.style.backgroundImage = `url('${base64Data}')`;
+                showNotification("📷 本地圖片已暫存，請按下方儲存儲存！");
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function setPresetBg(key) {
+            const url = presetBgs[key];
+            if (url) {
+                document.getElementById('edit-node-bg').value = url;
+                const bgElement = document.getElementById('game-bg');
+                bgElement.style.backgroundImage = `url('${url}')`;
+            }
+        }
+
+        function createChoiceRowHTML(text, targetId, index) {
+            const div = document.createElement('div');
+            div.className = "bg-gray-800/85 p-2.5 rounded border border-gray-700 flex flex-col space-y-1.5 choice-row shadow-sm";
+            div.innerHTML = `
+                <div class="flex justify-between items-center">
+                    <span class="text-[9px] text-amber-500 font-bold">按鈕選項 ${index + 1}</span>
+                    <button onclick="deleteChoiceRow(this)" class="text-red-400 text-[10px] hover:text-red-300">❌ 刪除</button>
+                </div>
+                <div>
+                    <input type="text" class="choice-text w-full bg-gray-900 border border-gray-750 rounded p-1.5 text-xs text-gray-200" placeholder="按鈕文字（少字為主）" value="${escapeHtml(text)}">
+                </div>
+                <div class="flex space-x-1 items-center">
+                    <span class="text-[9px] text-gray-400 shrink-0">按下後跳轉至:</span>
+                    <select class="choice-target w-full bg-gray-900 border border-gray-750 rounded p-1 text-[11px] text-amber-300">
+                        ${generateTargetOptions(targetId)}
+                    </select>
+                </div>
+            `;
+            return div;
+        }
+
+        function generateTargetOptions(selectedId) {
+            let options = '';
+            Object.keys(gameData).forEach(id => {
+                const isSelected = id === selectedId ? 'selected' : '';
+                options += `<option value="${id}" ${isSelected}>${id} (${gameData[id].tag || '無標題'})</option>`;
+            });
+            options += `<option value="__modal_trigger__">+ ➕ 新建其他關卡頁面...</option>`;
+            return options;
+        }
+
+        function addChoiceRow() {
+            const list = document.getElementById('edit-choices-list');
+            const rowCount = list.getElementsByClassName('choice-row').length;
+            const defaultTarget = Object.keys(gameData)[0] || "start";
+            
+            const newRow = createChoiceRowHTML("", defaultTarget, rowCount);
+            list.appendChild(newRow);
+
+            const select = newRow.querySelector('.choice-target');
+            select.onchange = function() {
+                if (this.value === "__modal_trigger__") {
+                    this.value = "start"; // 先復原
+                    openCreatePageModal(); // 改用精美的內建視窗
+                }
+            };
+        }
+
+        function deleteChoiceRow(btn) {
+            const row = btn.closest('.choice-row');
+            row.remove();
+            const list = document.getElementById('edit-choices-list');
+            const rows = list.getElementsByClassName('choice-row');
+            Array.from(rows).forEach((r, idx) => {
+                r.querySelector('span').innerText = `按鈕選項 ${idx + 1}`;
+            });
+        }
+
+        function openCreatePageModal() {
+            document.getElementById('modal-new-id').value = '';
+            document.getElementById('modal-new-tag').value = '';
+            document.getElementById('create-page-modal').classList.remove('hidden');
+        }
+
+        function closeCreatePageModal() {
+            document.getElementById('create-page-modal').classList.add('hidden');
+        }
+
+        // 建立新頁面
+        function submitCreatePage() {
+            const rawId = document.getElementById('modal-new-id').value;
+            const rawTag = document.getElementById('modal-new-tag').value;
+
+            if (!rawId || !rawTag) {
+                showModal("注意", "請填寫完兩個欄位才能新增喔！");
+                return;
+            }
+
+            const cleanId = rawId.trim().replace(/\s+/g, '_');
+            const cleanTag = rawTag.trim();
+
+            if (gameData[cleanId]) {
+                showModal("提示", `此頁面 ID 【${cleanId}】 已經存在！請使用其他代碼。`);
+                return;
+            }
+
+            gameData[cleanId] = {
+                tag: cleanTag,
+                bgImage: presetBgs.kinmen_old,
+                story: `這裡是【${cleanTag}】故事線的全新頁面！您可以在此處編輯豐富的冒險情境...`,
+                choices: []
+            };
+
+            saveToLocalStorage();
+            closeCreatePageModal();
+            renderNode(cleanId);
+            
+            showNotification(`🎉 成功建立新頁面【${cleanTag}】！`);
+        }
+
+        // 暫存修改到當前記憶體
+        function saveCurrentNodeChanges() {
+            const id = document.getElementById('edit-node-id').value;
+            if (!id || !gameData[id]) return;
+
+            const tag = document.getElementById('edit-node-tag').value.trim();
+            const bgImage = document.getElementById('edit-node-bg').value.trim();
+            const story = document.getElementById('edit-node-story').value;
+
+            const choices = [];
+            const rows = document.getElementsByClassName('choice-row');
+            
+            for (let i = 0; i < rows.length; i++) {
+                const text = rows[i].querySelector('.choice-text').value.trim();
+                const targetId = rows[i].querySelector('.choice-target').value;
+                
+                if (text && targetId && targetId !== "__modal_trigger__") {
+                    choices.push({ text, targetId });
+                }
+            }
+
+            gameData[id].tag = tag;
+            gameData[id].bgImage = bgImage;
+            gameData[id].story = story;
+            gameData[id].choices = choices;
+
+            saveToLocalStorage();
+            renderNode(id);
+            
+            showNotification("💾 本關卡修改成功，已套用至暫存記憶體！");
+        }
+
+        // 寫入本地存檔
+        function saveToLocalStorage() {
+            try {
+                localStorage.setItem('kinmen_rpg_custom_data_v2', JSON.stringify(gameData));
+            } catch(e) {
+                console.warn("快取寫入受限，但當前遊戲進度仍儲存在網頁記憶體中！");
+            }
+        }
+
+        // 【儲存的核心函數】：打包含編輯器的完整版
+        function getUpdatedHtmlSource() {
+            let html = document.documentElement.outerHTML;
+            const serializedData = JSON.stringify(gameData, null, 4);
+            
+            let cleanHtml = "<!DOCTYPE html>\n" + html;
+            
+            // 替換代碼內的預設劇本 gameData 物件
+            cleanHtml = cleanHtml.replace(/let gameData = \{[\s\S]*?\};\s*let currentNodeId/g, `let gameData = ${serializedData};\n        let currentNodeId`);
+            
+            // 確保別人打開時是從第一頁 intro 開始玩，且編輯器預設關閉
+            cleanHtml = cleanHtml.replace(/let currentNodeId = "[^"]*";/g, 'let currentNodeId = "intro";');
+            cleanHtml = cleanHtml.replace(/isEditMode = true;/g, 'isEditMode = false;');
+            
+            // 恢復 HTML 元件的起始 class，避免抽屜被固定打開
+            cleanHtml = cleanHtml.replace(/id="editor-drawer" class="([^"]*)"/g, 'id="editor-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[440px] bg-gray-900/98 border-l border-amber-500/20 shadow-2xl z-40 transform translate-x-full transition-transform duration-300 ease-in-out backdrop-blur-lg flex flex-col justify-between hidden"');
+            cleanHtml = cleanHtml.replace(/id="custom-modal" class="([^"]*)"/g, 'id="custom-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 hidden"');
+            cleanHtml = cleanHtml.replace(/id="create-page-modal" class="([^"]*)"/g, 'id="create-page-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 hidden"');
+            cleanHtml = cleanHtml.replace(/id="edit-btn-text">[^<]*<\/span>/g, 'id="edit-btn-text">⚙️ 進入編輯器</span>');
+
+            return cleanHtml;
+        }
+
+        // 【新增核心功能】：自動移除所有編輯器 UI，產出「純遊玩版」代碼
+        function getPlayOnlyHtmlSource() {
+            // 利用 DOMParser 安全複製一份當前的 DOM 樹，不影響正在使用的網頁
+            const parser = new DOMParser();
+            const docClone = parser.parseFromString(document.documentElement.outerHTML, "text/html");
+
+            // --- 開始物理移除所有與編輯器相關的 HTML 元件 ---
+            
+            // 1. 移除頂部的「進入編輯器」按鈕
+            const toggleBtn = docClone.getElementById('btn-toggle-edit');
+            if(toggleBtn) toggleBtn.remove();
+
+            // 2. 移除整個側邊的「編輯器抽屜」
+            const drawer = docClone.getElementById('editor-drawer');
+            if(drawer) drawer.remove();
+
+            // 3. 移除「新增關卡」的彈出視窗
+            const createModal = docClone.getElementById('create-page-modal');
+            if(createModal) createModal.remove();
+
+            // ---------------------------------------------------
+
+            const serializedData = JSON.stringify(gameData, null, 4);
+            let cleanHtml = "<!DOCTYPE html>\n" + docClone.documentElement.outerHTML;
+
+            // 替換代碼內的預設劇本 gameData 物件為最新進度
+            cleanHtml = cleanHtml.replace(/let gameData = \{[\s\S]*?\};\s*let currentNodeId/g, `let gameData = ${serializedData};\n        let currentNodeId`);
+            
+            // 確保純遊玩版強制從 intro 開始
+            cleanHtml = cleanHtml.replace(/let currentNodeId = "[^"]*";/g, 'let currentNodeId = "intro";');
+            cleanHtml = cleanHtml.replace(/let isEditMode = false;/g, 'let isEditMode = false;');
+
+            return cleanHtml;
+        }
+
+        // 下載：匯出純遊玩乾淨版 (Play-Only)
+        function downloadPlayOnlyHtmlFile() {
+            saveCurrentNodeChanges(); // 匯出前先存檔
+            const cleanSource = getPlayOnlyHtmlSource();
+            
+            try {
+                const blob = new Blob([cleanSource], { type: "text/html" });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = "金生金世_純遊玩版.html"; // 下載檔名區分
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                showModal("🎮 匯出成功！", "『金生金世_純遊玩版.html』已成功下載！\n\n這個版本已經徹底刪除了編輯器和編輯按鈕。你可以放心地把這個檔案傳給同學、老師，或者上傳到網路上，別人點開就只能玩，絕對無法修改你的故事！");
+            } catch (err) {
+                // 如果被沙盒阻擋，秀出代碼讓玩家手動複製
+                showModalWithCode("⚠️ 直接下載被阻擋", "請直接複製下方的【純遊玩版】代碼，並另存為 index.html：", cleanSource);
+            }
+        }
+
+        // 下載：含編輯器的完整版 (Dev)
+        function downloadUpdatedHtmlFile() {
+            saveCurrentNodeChanges();
+            const cleanSource = getUpdatedHtmlSource();
+            
+            try {
+                const blob = new Blob([cleanSource], { type: "text/html" });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = "index.html";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                showModal("📥 下載成功！", "『index.html』完整編輯版已成功下載。");
+            } catch (err) {
+                showModalWithCode("⚠️ 直接下載被阻擋", "請直接複製下方的【完整編輯版】代碼：", cleanSource);
+            }
+        }
+
+        // 複製代碼 (完整版)
+        function copyUpdatedHtmlToClipboard() {
+            saveCurrentNodeChanges(); 
+            const cleanSource = getUpdatedHtmlSource();
+            const textarea = document.createElement('textarea');
+            textarea.value = cleanSource;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showModal("🎉 複製成功！", "最新完整版程式碼已複製到剪貼簿。");
+            } catch (err) {
+                showModal("複製失敗", "瀏覽器阻擋了複製。");
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        }
+
+        // 匯出 JSON
+        function exportGameData() {
+            const dataStr = JSON.stringify(gameData, null, 2);
+            const blob = new Blob([dataStr], { type: "application/json" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "金生金世_遊戲自訂備份.json";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showModal("備份成功！", "自訂數據 .json 檔已下載！");
+        }
+
+        // 匯入 JSON
+        function importGameDataPrompt() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    try {
+                        const importedData = JSON.parse(evt.target.result);
+                        if (typeof importedData === 'object' && importedData["start"]) {
+                            gameData = importedData;
+                            saveToLocalStorage();
+                            restartGame();
+                            showModal("還原成功！", "已成功載入您的全部自訂劇本與圖片！");
+                        } else {
+                            showModal("格式錯誤", "請上傳正確的備份 .json 檔！");
+                        }
+                    } catch(err) {
+                        showModal("還原失敗", "檔案解析失敗。");
+                    }
+                };
+                reader.readAsText(file);
+            };
+            input.click();
+        }
+
+        // 增強型 Modal (加入程式碼手動選取複製功能)
+        function showModalWithCode(title, bodyText, rawCode) {
+            const modal = document.getElementById('custom-modal');
+            document.getElementById('modal-title').innerText = title;
+            
+            const bodyEl = document.getElementById('modal-body');
+            bodyEl.innerHTML = `<div>${bodyText.replace(/\n/g, '<br>')}</div>`;
+            
+            const textarea = document.createElement('textarea');
+            textarea.className = "w-full h-40 bg-gray-950 border border-gray-800 rounded p-2 text-[10px] font-mono mt-3 text-amber-100 select-all focus:outline-none";
+            textarea.value = rawCode;
+            textarea.setAttribute('readonly', 'readonly');
+            textarea.onclick = function() { this.select(); }; // 點擊自動全選
+            bodyEl.appendChild(textarea);
+
+            const actionsEl = document.getElementById('modal-actions');
+            actionsEl.innerHTML = '';
+            
+            const btnCopy = document.createElement('button');
+            btnCopy.className = "bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-lg text-xs font-bold transition";
+            btnCopy.innerText = "📋 點我一鍵複製";
+            btnCopy.onclick = function() {
+                textarea.select();
+                document.execCommand('copy');
+                showNotification("🎉 代碼已成功複製！");
+            };
+            actionsEl.appendChild(btnCopy);
+
+            const btnClose = document.createElement('button');
+            btnClose.className = "bg-gray-800 hover:bg-gray-750 text-gray-300 px-4 py-1.5 rounded-lg text-xs transition";
+            btnClose.innerText = "關閉";
+            btnClose.onclick = hideModal;
+            actionsEl.appendChild(btnClose);
+
+            modal.classList.remove('hidden');
+        }
+
+        function showModal(title, bodyText, actions = []) {
+            const modal = document.getElementById('custom-modal');
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-body').innerText = bodyText;
+
+            const actionsEl = document.getElementById('modal-actions');
+            actionsEl.innerHTML = '';
+
+            if (actions.length === 0) {
+                actions = [{ text: "確定", onClick: () => hideModal(), isPrimary: true }];
+            }
+
+            actions.forEach(act => {
+                const btn = document.createElement('button');
+                btn.className = act.isPrimary 
+                    ? "bg-amber-600 hover:bg-amber-700 text-black px-4 py-1.5 rounded-lg text-xs font-bold transition"
+                    : "bg-gray-800 hover:bg-gray-750 text-gray-300 px-4 py-1.5 rounded-lg text-xs transition";
+                btn.innerText = act.text;
+                btn.onclick = act.onClick || hideModal;
+                actionsEl.appendChild(btn);
+            });
+
+            modal.classList.remove('hidden');
+        }
+
+        function hideModal() {
+            document.getElementById('custom-modal').classList.add('hidden');
+        }
+
+        function showNotification(msg) {
+            const div = document.createElement('div');
+            div.className = "fixed bottom-28 left-1/2 transform -translate-x-1/2 bg-amber-600 text-black text-[11px] font-bold py-2.5 px-4 rounded-full shadow-2xl z-50 text-center max-w-[80%] animate-pulse";
+            div.innerText = msg;
+            document.body.appendChild(div);
+            setTimeout(() => { div.remove(); }, 4000);
+        }
+
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    </script>
+
+<div class="fixed bottom-28 left-1/2 transform -translate-x-1/2 bg-amber-600 text-black text-[11px] font-bold py-2.5 px-4 rounded-full shadow-2xl z-50 text-center max-w-[80%] animate-pulse">💾 本關卡修改成功，已套用至暫存記憶體！</div></body></html>
